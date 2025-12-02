@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jagan's Wav2Lip Demo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Avatar Interface</h1>
+            <p>Real-time Offline Lip Sync Demo</p>
+        </header>
+
+        <main>
+            <div class="avatar-container">
+                <div class="video-wrapper">
+                    <img id="avatar-display" src="{{ url_for('static', filename='images/einstein.jpg') }}"
+                        alt="AI Avatar">
+                    <div class="overlay"></div>
+                </div>
+                <div class="status-indicator" id="status-indicator">Ready</div>
+            </div>
+
+            <div class="controls">
+                <textarea id="text-input" placeholder="Type something for me to say..."></textarea>
+                <button id="speak-btn">
+                    <span>Speak</span>
+                    <div class="btn-bg"></div>
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

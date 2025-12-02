@@ -16,3 +16,5 @@ Wav2Lip/checkpoints/
 openvino_model/
 node_modules
 bkp/
+*/.venv/*
+jagan_demo/venv/*
